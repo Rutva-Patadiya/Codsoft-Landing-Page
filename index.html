@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhyana Enterprise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="perfume.png">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container" id="home">
+        <div class="img">
+            <img src="logo.png">
+        </div>
+        <div class="nav1">
+        <li><a href="#firstSection">Home</a></li>
+        <li><a href="#womensLink">Women's</a></li>
+        <li><a href="#mensLink">Men's</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        
+        <a href="login.html" target="_blank" ><input type="submit" value="Login" id="f">  </a> 
+        <a href="signup.html" target="_blank" id="Sign Up"><input type="submit" value="Sign Up" id="Sign Up">   </a>
+    </div>
+</div>
+
+
+
+<div class="firstSection" id="firstSection">
+  <div class="slogan">
+    <div class="s1">Scent Haven</div>
+    Where luxury meets fragrance 
+   <div class="scent"> <img class="scent" src="scent perfume.jpeg"></div><br>
+   <a href="#secondSection"><input type="submit" value="Women's" ></a>
+   <a href="#thirdSection"><input type="submit" value="Men's"> </a>
+</div>
+
+</div>
+
+<div class="secondSection" id="womensLink">
+
+    <div class="new">
+        New Perfumes for Women
+    </div>
+
+    <div class="image-container" >
+        <div class="image-wrapper">
+            <div class="image-item">
+                <img src="image1.jpeg" alt="Image 1" class="image1">
+                <span class="price">₹ 175</span>
+            </div>
+            <div class="image-item">
+                <img src="image2.jpg" alt="Image 2" class="image2">
+                <span class="price">₹ 200</span>
+            </div>
+        </div>
+        <div class="image-wrapper">
+            <div class="image-item">
+                <img src="image3.jpg" alt="Image 3" class="image3">
+                <span class="price">₹ 140</span>
+            </div>
+            <div class="image-item">
+                <img src="image4.jpeg" alt="Image 4" class="image4">
+                <span class="price">₹ 160</span>
+            </div>
+        </div>
+        <div class="image-wrapper">
+            <div class="image-item">
+                <img src="image6.jpg" alt="Image 5" class="image6">
+                <span class="price">₹ 300</span>
+            </div>
+            <div class="image-item">
+                <img src="image5.jpg" alt="Image 6" class="image5">
+                <span class="price">$75</span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<div class="thirdSection" id="mensLink">
+    <div class="new">
+        New Perfumes for Men
+    </div>
+
+    <div class="image-container" >
+        <div class="image-wrapper">
+            <div class="image-item">
+                <img src="image7.webp" alt="Image 1" class="image1">
+                <span class="price">₹ 175</span>
+            </div>
+            <div class="image-item">
+                <img src="image9.jpg" alt="Image 2" class="image2">
+                <span class="price">₹ 200</span>
+            </div>
+        </div>
+        <div class="image-wrapper">
+            <div class="image-item">
+                <img src="image13.webp" alt="Image 3" class="image3">
+                <span class="price">₹ 140</span>
+            </div>
+            <div class="image-item">
+                <img src="image14.jpg" alt="Image 4" class="image4">
+                <span class="price">₹ 160</span>
+            </div>
+        </div>
+        <div class="image-wrapper">
+            <div class="image-item">
+                <img src="image15.avif " alt="Image 5" class="image6">
+                <span class="price">₹ 300</span>
+            </div>
+            <div class="image-item">
+                <img src="image16.webp" alt="Image 6" class="image5">
+                <span class="price">₹ 275</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="contact" id="contact">
+<div class="contact-form-container">
+    <h2>Contact Us</h2>
+    <form id="contact-form" method="post" class="contact-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-button" id="submit-button">Send Message</button>
+
+        <div id="submit">
+
+        </div>
+    </form>
+    </div>
+</div>
+<section id="about">
+    <div class="about-container">
+        <h1>About Us</h1>
+        <p>Welcome to Dhyana Enterprise, where luxury meets fragrance. We specialize in providing the finest perfumes for both men and women, crafted with the highest quality ingredients to ensure an unforgettable olfactory experience.</p>
+        <p>Our journey began with a passion for perfumery and a commitment to excellence. Over the years, we have curated a collection that embodies elegance, sophistication, and individuality.</p>
+        <p>At Dhyana Enterprise, we believe in the power of scent to evoke emotions and create lasting memories. Each fragrance is a testament to our dedication to craftsmanship and innovation.</p>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2024 Dhyana Enterprise. All rights reserved.</p>
+
+</footer>
+
+<script>
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+           document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                document.getElementById('submit').textContent = 'Form submitted!';
+                this.reset();
+            });
+        });
+        
+</script>
+</body>
+</html>
